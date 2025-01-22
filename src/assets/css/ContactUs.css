@@ -1,0 +1,65 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark text color */
+}
+
+/* Heading Styling */
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff; /* Bootstrap primary blue color */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Container */
+.contact-from {
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 500px;
+  margin: 20px auto; /* Centered container */
+  padding: 20px;
+  text-align: left;
+}
+
+/* Contact Details Styling */
+.contact-from h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-from p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  line-height: 1.5;
+  color: #555; /* Slightly muted text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .contact-from {
+    padding: 15px;
+    max-width: 90%; /* Adjust container width for smaller screens */
+  }
+
+  .contact-from h4 {
+    font-size: 1.3rem;
+  }
+
+  .contact-from p {
+    font-size: 1rem;
+  }
+}

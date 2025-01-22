@@ -1,0 +1,96 @@
+/* General Styling for the Home Component */
+.home-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.home_slider {
+  position: relative;
+}
+
+.home_slider img {
+  width: 100%;
+  height: 500px !important;
+  object-fit: cover;
+  filter: brightness(50%); /* Dimming the image */
+}
+
+.home_slider .carousel-item {
+  position: relative;
+}
+
+.slider_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  opacity: 1; /* Ensure it starts visible */
+  animation: fadeInText 2s ease-out forwards; /* Fade-in effect */
+}
+
+.scrolling_title {
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 1; /* Ensure it starts visible */
+  animation: slideUpAndGrow 2s ease-out forwards; /* Slide up and grow */
+}
+
+.scrolling_description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 1; /* Ensure it starts visible */
+  animation: slideUp 2s ease-out forwards; /* Slide up */
+}
+
+/* Keyframes for sliding up and growing */
+@keyframes slideUpAndGrow {
+  0% {
+    transform: translateY(50px) scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(25px) scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for sliding up */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for text fade-in */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.about-section{
+  text-align: center;
+}
+.about-section p{
+
+  justify-content: center;
+  text-align: center;
+  align-items: centercl;
+}
