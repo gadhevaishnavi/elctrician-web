@@ -15,13 +15,13 @@ const Home = () => {
         {
           id: 1,
           image: img1,
-          title: "Welcome To Gaiykwad Electrical.",
+          title: "Welcome To Gayakwad Electrical.",
           description: "",
         },
         {
           id: 2,
           image: img2,
-          title: "Welcome To Gaiykwad Electrical.",
+          title: "Welcome To Gayakwad Electrical.",
           description: `We specialize in processing and exporting, proudly delivering
                 top-quality products to wholesale customers worldwide.`,
         },
@@ -65,7 +65,7 @@ const Home = () => {
       <section className="about-section">
         <h2>Why Choose Us?</h2>
         <p>
-          At <strong>Gaiykwad Electrical</strong>, we prioritize safety, efficiency, and customer satisfaction.
+          At <strong>Gayakwad Electrical</strong>, we prioritize safety, efficiency, and customer satisfaction.
           With years of experience in residential and commercial electrical work, our skilled team ensures
           that every job is done to the highest standards.
         </p>
