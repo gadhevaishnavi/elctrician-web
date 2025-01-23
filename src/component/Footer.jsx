@@ -38,10 +38,10 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="social-icons">
-            <a href="https://wa.me/96892850600" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-            <a href="tel:+96892850600"><FaPhoneAlt /></a>
-            <a href="mailto:info@asmkmct.com"><FaEnvelope /></a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://wa.me/7028773402" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+            <a href="tel:+7028773402"><FaPhoneAlt /></a>
+            <a href="gayakwadshubham7028@gmail.com"><FaEnvelope /></a>
+            <a href="https://www.facebook.com/S.G.Patil/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
             <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer"><FaGooglePlusG /></a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
@@ -49,7 +49,7 @@ const Footer = () => {
 
           {/* Footer Note */}
           <footer>
-            <p>© 2025 Gaiykwad Electrical. All Rights Reserved</p>
+            <p>© 2025 Gayakwad Electrical. All Rights Reserved</p>
             <p>Developed by <a href="https://developer.com" target="_blank" rel="noopener noreferrer">Developer</a></p>
           </footer>
         </div>

@@ -7,6 +7,8 @@ import img3 from '../assets/images/aboutimg3.jpeg'
 import vedio1 from '../assets/images/vedio1.mp4'
 import vedio2 from '../assets/images/vedio2.mp4'
 import Footer from './Footer';
+import shubham from '../assets/images/Shubham.jpg'
+import ganesh from '../assets/images/ganesh.jpg'
 const AboutUs = () => {
   const handleButtonClick = (serviceType) => {
     alert(`You clicked on ${serviceType}`);
@@ -21,7 +23,7 @@ const AboutUs = () => {
       <section className="mission-section">
         <h2>Our Mission</h2>
         <p>
-          At <strong>Gaiykwad Electrical</strong>, we are committed to providing top-notch electrical solutions with a focus on safety, quality, and customer satisfaction. Whether it’s residential, commercial, or industrial work, we bring expertise and dedication to every project.
+          At <strong>Gayakwad Electrical</strong>, we are committed to providing top-notch electrical solutions with a focus on safety, quality, and customer satisfaction. Whether it’s residential, commercial, or industrial work, we bring expertise and dedication to every project.
         </p>
       </section>
 
@@ -83,16 +85,16 @@ const AboutUs = () => {
         <div className="team-members">
           <div className="team-member">
             <img
-              src="https://via.placeholder.com/150"
+              src={shubham}
               alt="John Doe"
               className="member-photo"
             />
-            <h3>Shubham Gaiywad</h3>
+            <h3>Shubham Gayakwad</h3>
             <p>Master Electrician</p>
           </div>
           <div className="team-member">
             <img
-              src="https://via.placeholder.com/150"
+              src={ganesh}
               alt="Jane Smith"
               className="member-photo"
             />
