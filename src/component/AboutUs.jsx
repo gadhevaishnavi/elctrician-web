@@ -7,7 +7,7 @@ import img3 from '../assets/images/aboutimg3.jpeg'
 import vedio1 from '../assets/images/vedio1.mp4'
 import vedio2 from '../assets/images/vedio2.mp4'
 import Footer from './Footer';
-import shubham from '../assets/images/Shubham.jpg'
+import ShubhamImage from '../assets/images/Shubham.jpg';
 import ganesh from '../assets/images/ganesh.jpg'
 const AboutUs = () => {
   const handleButtonClick = (serviceType) => {
@@ -85,7 +85,7 @@ const AboutUs = () => {
         <div className="team-members">
           <div className="team-member">
             <img
-              src={shubham}
+              src={ShubhamImage}
               alt="John Doe"
               className="member-photo"
             />
