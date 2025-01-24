@@ -18,7 +18,6 @@ const AboutUs = () => {
         <h1>About Us</h1>
         <p>Your Trusted Partner for All Electrical Needs</p>
       </header>
-
       <section className="mission-section">
         <h2>Our Mission</h2>
         <p>
