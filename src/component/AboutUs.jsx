@@ -6,7 +6,7 @@ import img2 from '../assets/images/aboutimg2.jpeg'
 import img3 from '../assets/images/aboutimg3.jpeg'
 import vedio1 from '../assets/images/vedio1.mp4'
 import vedio2 from '../assets/images/vedio2.mp4'
-import ShubhamImage from '../assets/images/Shubham.jpg'
+import ShubhamImage from '../assets/images/shubham.jpg'
 import ganesh from '../assets/images/ganesh.jpg'
 const AboutUs = () => {
   const handleButtonClick = (serviceType) => {
