@@ -9,6 +9,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import AboutUs from './AboutUs';
 // import Footer from './Footer';
 import ContactUs from './ContactUs';
+import FloatingIcon from './FloatingIcon';
 
 const Home = () => {
     const sliderData = [
@@ -72,6 +73,7 @@ const Home = () => {
       </section>
 
       {/* <Footer/> */}
+      <FloatingIcon/>
     </div>
   );
 };
