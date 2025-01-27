@@ -1,17 +1,18 @@
-
 import React, { useState } from 'react';
 import '../assets/css/AboutUs.css';
 import img1 from '../assets/images/aboutimg1.jpeg'
 import img2 from '../assets/images/aboutimg2.jpeg'
 import img3 from '../assets/images/aboutimg3.jpeg'
-import vedio1 from '../assets/images/vedio1.mp4'
-import vedio2 from '../assets/images/vedio2.mp4'
+// import vedio1 from '../assets/images/vedio1.mp4'
+// import vedio2 from '../assets/images/vedio2.mp4'
 import ShubhamImage from '../assets/images/shubham.jpg'
 import ganesh from '../assets/images/ganesh.jpg'
+import VideoSection from './VedioSection';
 const AboutUs = () => {
   const handleButtonClick = (serviceType) => {
     alert(`You clicked on ${serviceType}`);
   };
+  
   return (
     <div className="about-us-container">
       <header className="about-header">
@@ -25,14 +26,15 @@ const AboutUs = () => {
         </p>
       </section>
 
-      {/* Video Section */}
+      {/* Video Section  */}
       
-      <div className="video-section">
+       {/* <div className="video-section">
       <iframe src={vedio1} frameborder="0"></iframe>
       </div>
       <div className='vedio-section2'>
         <iframe src={vedio2} frameborder="0"></iframe>
-      </div>
+      </div> */}
+      <VideoSection/>
 
       <section className="services-section">
       <h2>What We Offer</h2>

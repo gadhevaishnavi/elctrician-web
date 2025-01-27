@@ -1,0 +1,67 @@
+/* Container for the whole video section */
+.video-section,
+.video-section2 {
+  display: flex;
+  justify-content: center; /* Center the video horizontally */
+  margin: 20px 0;
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Allow container to adjust height based on video aspect ratio */
+}
+
+/* Styling for each video */
+video {
+  width: 90%; /* Default width for mobile */
+  max-width: 700px; /* Ensure videos don't get too wide */
+  border: 2px solid #ddd; /* Optional: adds a border around the video */
+  border-radius: 8px; /* Optional: rounded corners for the video */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for aesthetics */
+  background-color: #000; /* Optional: black background when video isn't loaded */
+  display: block; /* Ensure video doesn't have extra space below */
+}
+
+/* Styling for surrounding divs */
+.video-section,
+.video-section2 {
+  margin-bottom: 20px; /* Add space between each video */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center videos horizontally */
+  width: 100%; /* Full width for responsiveness */
+  max-width: 800px; /* Limit maximum width for each video section */
+  margin: 20px auto; /* Center the video sections on the page */
+}
+
+/* Hover effect for videos */
+video:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Responsive breakpoints */
+
+/* For tablets (widths between 600px and 1024px) */
+@media (max-width: 1024px) {
+  video {
+    width: 85%; /* Slightly smaller on tablets */
+  }
+}
+
+/* For mobile (widths between 320px and 600px) */
+@media (max-width: 600px) {
+  .video-section,
+  .video-section2 {
+    flex-direction: column; /* Stack videos vertically on smaller screens */
+    align-items: center; /* Center the videos in the column */
+  }
+  video {
+    width: 95%; /* Full width on mobile */
+  }
+}
+
+/* For larger desktops (widths greater than 1200px) */
+@media (min-width: 1200px) {
+  video {
+    width: 70%; /* For large screens, use less width */
+  }
+}
+
