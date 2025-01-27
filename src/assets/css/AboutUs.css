@@ -1,5 +1,5 @@
 /* General Styles */
-.about-us-container {
+ .about-us-container {
   font-family: 'Arial', sans-serif;
   padding: 20px;
   background-color: #f4f4f9;
@@ -20,10 +20,10 @@
 .about-header p {
   font-size: 1.2rem;
   color: #666;
-}
+} 
 
 /* Mission Section */
-.mission-section {
+ .mission-section {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -34,10 +34,10 @@
 .mission-section h2 {
   text-align: center;
   margin-bottom: 15px;
-}
+} 
 
 /* Services Section */
-.services-section {
+ /* .services-section {
   margin-bottom: 30px;
 }
 
@@ -76,11 +76,13 @@
 
 .service h3 {
   margin: 10px 0;
-}
+} */
+
 
 /* Team Section */
 .team-section {
   margin-bottom: 30px;
+
 }
 
 .team-section h2 {
@@ -118,28 +120,133 @@
 
 
 
+ 
 
-/* vedio section */
-   
-.video-section, .vedio-section2 {
+ /* .selected-service {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.selected-service img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.selected-service h3 {
+  font-size: 24px;
+  color: #333;
+} */
+
+
+
+/* Services Section */
+.services-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.services {
   display: flex;
-  justify-content: center; /* Centers the iframe horizontally */
-  align-items: center;    /* Centers the iframe vertically if a height is specified */
-  margin: 20px 0;         /* Adds spacing between sections */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.video-section iframe, .vedio-section2 iframe {
-  width: 100%;            /* Ensures the video takes the full width of the container */
-  max-width: 800px;       /* Limits the maximum width for better visuals on large screens */
-  height: 450px;          /* Sets a proportional height for the iframe */
-  border: none;           /* Removes the border around the iframe */
-  border-radius: 10px;    /* Adds rounded corners for a modern look */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Adds a subtle shadow effect */
+.service {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Optional: Make the sections responsive */
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.service p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.service button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.service button:hover {
+  background-color: #0056b3;
+}
+
+/* Selected Service Details Section */
+.selected-service {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.selected-service h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.selected-service img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.selected-service h3 {
+  font-size: 22px;
+  color: #007bff;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .video-section iframe, .vedio-section2 iframe {
-    height: 300px;        /* Adjusts height for smaller screens */
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    max-width: 90%;
+  }
+
+  .selected-service img {
+    max-width: 90%;
   }
 }
