@@ -29,7 +29,7 @@ const Location = () => {
           Maharashtra 431702
         </p>
         <h3>Email</h3>
-        <p>info@asmkmct.com</p>
+        <p>gayakwadshubham7028@gmail.com</p>
       </div>
     </div>
   );
