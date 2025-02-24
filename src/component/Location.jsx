@@ -22,7 +22,7 @@ const Location = () => {
         <p>Get in touch with us today.</p>
         <h3>Call Us</h3>
         <p>Mobile: 7028773402</p>
-        <p>Tel: +968 24050604</p>
+        <p>Tel: 92845 28321</p>
         <h3>Address</h3>
         <p>
           Parajna, Tq Vasamat, Dist Hingoli, <br />
