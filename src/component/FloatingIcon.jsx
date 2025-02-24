@@ -25,19 +25,19 @@ const FloatingIcon = () => {
   return (
     <div className={`floating-icons ${isVisible ? "visible" : "hidden"}`}>
       <a
-        href="https://wa.me/+7028773402"
+        href="https://wa.me/+917028773402"
         className="floatingicon whatsapp"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaWhatsapp size={25} />
-        <span className="tooltip">+7028773402</span>
+        <span className="tooltip">+917028773402</span>
       </a>
-      <a href="tel:+7028773402" className="floatingicon call">
+      <a href="tel:+917028773402" className="floatingicon call">
         <FaPhoneAlt size={25} />
-        <span className="tooltip">+7028773402</span>
+        <span className="tooltip">+917028773402</span>
       </a>
-      <a href="gayakwadshubham7028@gmail.com" className="floatingicon email">
+      <a href="mailto:gayakwadshubham7028@gmail.com" className="floatingicon email">
         <FaEnvelope size={25} />
         <span className="tooltip">gayakwadshubham7028@gmail.com</span>
       </a>

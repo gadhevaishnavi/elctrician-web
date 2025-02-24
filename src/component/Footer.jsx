@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="social-icons">
             <a href="https://wa.me/7028773402" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
             <a href="tel:+7028773402"><FaPhoneAlt /></a>
-            <a href="gayakwadshubham7028@gmail.com"><FaEnvelope /></a>
+            <a href="mailto:gayakwadshubham7028@gmail.com"><FaEnvelope /></a>
             <a href="https://www.facebook.com/S.G.Patil/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
             <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer"><FaGooglePlusG /></a>
