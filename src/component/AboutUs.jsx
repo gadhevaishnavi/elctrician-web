@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../assets/css/AboutUs.css';
 import img1 from '../assets/images/aboutimg1.jpeg';
 import img2 from '../assets/images/aboutimg2.jpeg';
@@ -8,7 +9,7 @@ import ganesh from '../assets/images/ganesh.jpg';
 import VideoSection from './VedioSection';
 
 const AboutUs = () => {
-  const [selectedService, setSelectedService] = useState(null);
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -31,9 +32,8 @@ const AboutUs = () => {
     },
   ];
 
-  const handleLearnMore = (serviceId) => {
-    const service = services.find((service) => service.id === serviceId);
-    setSelectedService(service);
+  const handleLearnMore = (service) => {
+    navigate(`/service/${service.id}`, { state: { service } });
   };
 
   return (
@@ -42,14 +42,14 @@ const AboutUs = () => {
         <h1>About Us</h1>
         <p>Your Trusted Partner for All Electrical Needs</p>
       </header>
+
       <section className="mission-section">
         <h2>Our Mission</h2>
         <p>
-          At <strong>Gayakwad Electrical</strong>, we are committed to providing top-notch electrical solutions with a focus on safety, quality, and customer satisfaction. Whether it’s residential, commercial, or industrial work, we bring expertise and dedication to every project.
+          At <strong>Gayakwad Electrical</strong>, we are committed to providing top-notch electrical solutions with a focus on safety, quality, and customer satisfaction.
         </p>
       </section>
 
-      {/* Video Section */}
       <VideoSection />
 
       <section className="services-section">
@@ -60,30 +60,22 @@ const AboutUs = () => {
               <img src={service.image} alt={service.title} />
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <button onClick={() => handleLearnMore(service.id)}>Learn More</button>
+              <button onClick={() => handleLearnMore(service)}>Learn More</button>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Selected Service Details */}
-      {selectedService && (
-        <section className="selected-service">
-          <img src={selectedService.image} alt={selectedService.title} />
-          <h3>{selectedService.title}</h3>
-        </section>
-      )}
-
       <section className="team-section">
         <h2>Meet Our Experts</h2>
         <div className="team-members">
           <div className="team-member">
-            <img src={ShubhamImage} alt="John Doe" className="member-photo" />
+            <img src={ShubhamImage} alt="Shubham Gayakwad" className="member-photo" />
             <h3>Shubham Gayakwad</h3>
             <p>Master Electrician</p>
           </div>
           <div className="team-member">
-            <img src={ganesh} alt="Jane Smith" className="member-photo" />
+            <img src={ganesh} alt="Ganesh Dhumse" className="member-photo" />
             <h3>Ganesh Dhumse</h3>
             <p>Senior Technician</p>
           </div>
@@ -94,4 +86,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-

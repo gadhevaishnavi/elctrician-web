@@ -8,7 +8,7 @@ import ContactUs from './component/ContactUs'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Optional for Bootstrap's JavaScript features
 import Footer from "./component/Footer"
-// import ContactIcon from "./component/ContactIcon"
+import ServiceDetail from './component/ServiceDetail';
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
       {/* <Route path="/product" element={<Product/>}></Route> */}
       <Route path="/contact" element={<ContactUs/>}></Route>
       <Route path="/location" element={<Location/>}></Route>
+      <Route path="/service/:id" element={<ServiceDetail />} />
 
     </Routes>
       

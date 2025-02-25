@@ -1,0 +1,98 @@
+/* Service Detail Page Styling */
+.service-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Reduced height */
+  color: black;
+  padding: 50px 20px; /* Adjusted padding to reduce extra space */
+  text-align: center;
+  margin: 0;
+}
+
+.back-button:hover {
+  background: #4b5563;
+  transform: scale(1.05);
+}
+
+/* Service Title */
+.service-detail-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px; /* Keeps spacing minimal */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Service Description */
+.service-detail-container p {
+  color: black;
+  font-size: 1rem;
+  margin-top: 8px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Service Image */
+.service-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 10px 0; /* Removed extra space above and below */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-image:hover {
+  transform: scale(1.05);
+}
+
+/* Additional Info Section */
+.service-extra-info {
+  background: #1f2937;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.service-extra-info h3 {
+  color: #facc15;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.service-extra-info p {
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-detail-container {
+    min-height: 70vh;
+    padding: 20px;
+  }
+
+  .service-detail-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-detail-container p {
+    font-size: 0.9rem;
+  }
+
+  .service-image {
+    max-width: 300px;
+    margin: 5px 0; /* Further reduced spacing for smaller screens */
+  }
+
+  .service-extra-info {
+    padding: 12px;
+    margin-top: 10px;
+  }
+}
