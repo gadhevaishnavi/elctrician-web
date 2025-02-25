@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../assets/css/AboutUs.css';
 import img1 from '../assets/images/aboutimg1.jpeg';
@@ -10,6 +10,7 @@ import VideoSection from './VedioSection';
 
 const AboutUs = () => {
   const navigate = useNavigate();
+  const [visibleDescriptions, setVisibleDescriptions] = useState({});
 
   const services = [
     {
@@ -33,7 +34,7 @@ const AboutUs = () => {
   ];
 
   const handleLearnMore = (service) => {
-    navigate(`/service/${service.id}`, { state: { service } });
+    navigate(`/service/${service.id}`, { state: { service } }); // Navigate to the new page
   };
 
   return (
@@ -59,7 +60,7 @@ const AboutUs = () => {
             <div key={service.id} className="service">
               <img src={service.image} alt={service.title} />
               <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              {/* Do not show description here */}
               <button onClick={() => handleLearnMore(service)}>Learn More</button>
             </div>
           ))}
@@ -86,3 +87,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
