@@ -1,58 +1,60 @@
-/* Container for all videos */
-.video-section,
-.video-section2 {
+/* Container for all videos in one row */
+.video-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center videos horizontally */
   align-items: center;
-  margin: 10px auto; /* Center sections and add spacing */
-  padding: 10px; /* Optional padding around sections */
-  width: 48%; /* Default width for videos on larger screens */
+  flex-wrap: nowrap; /* Ensure all videos stay in one row */
+  gap: 20px; /* Add spacing between videos */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 10px;
 }
 
-/* Styling for the videos */
+/* Individual video sections */
+.video-section,
+.video-section2 {
+  flex: 0 0 auto; /* Prevent videos from shrinking */
+  width: 48%; /* Adjust width for videos */
+  max-width: 470px; /* Ensure consistency */
+}
+
+/* Styling for videos */
 video {
-  width: 100%; /* Video takes full width of its container */
-  max-width: 480px; /* Maximum width to ensure consistent sizing */
-  border: 2px solid #ddd; /* Add a light border */
-  border-radius: 8px; /* Rounded corners for aesthetics */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  background-color: #000; /* Black background for unloaded videos */
-  transition: transform 0.3s ease; /* Smooth scaling on hover */
+  width: 100%;
+  max-width: 480px;
+  border: 2px solid #ddd;
+  background-color: #000;
+  transition: transform 0.3s ease;
 }
 
 /* Hover effect for videos */
-video:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
+/* video:hover {
+  transform: scale(1.05);
+} */
 
-/* Layout: Desktop (Default) */
-@media (min-width: 1025px) {
-  .video-section,
-  .video-section2 {
-    display: inline-block; /* Align videos side-by-side */
-  }
-}
-
-/* Layout: Tablets (Widths between 600px and 1024px) */
+/* Responsive adjustments */
 @media (max-width: 1024px) {
+  .video-container {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+  }
+
   .video-section,
   .video-section2 {
-    width: 80%; /* Adjust width for tablets */
-    margin: 15px auto; /* Center videos */
-  }
-  video {
-    max-width: 600px; /* Adjust maximum size for larger tablets */
+    width: 80%;
+    max-width: 600px;
   }
 }
 
-/* Layout: Mobile (Widths below 600px) */
 @media (max-width: 600px) {
+  .video-container {
+    flex-direction: column; /* Stack videos on small screens */
+    align-items: center;
+  }
+
   .video-section,
   .video-section2 {
-    width: 95%; /* Videos take almost full width on small screens */
-    margin: 10px auto; /* Adjust margins for small devices */
-  }
-  video {
-    max-width: 100%; /* Videos take full width for mobile devices */
+    width: 95%;
+    max-width: 100%;
   }
 }

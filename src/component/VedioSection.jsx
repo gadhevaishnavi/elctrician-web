@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import vedio1 from '../assets/images/vedio1.mp4';
 import vedio2 from '../assets/images/vedio2.mp4';
+import vedio3 from '../assets/images/vedio3.mp4'
 import '../assets/css/VedioSection.css'
 const VideoSection = () => {
   const videoRefs = useRef([]);
@@ -14,7 +15,7 @@ const VideoSection = () => {
   };
 
   return (
-    <div>
+    <div className='video-container'>
       {/* Video Section 1 */}
       <div className="video-section">
         <video
@@ -36,10 +37,25 @@ const VideoSection = () => {
           controls
           onPlay={() => handlePlay(1)}
           width="100%" // You can adjust the width and height
+        > 
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      {/* Vedio section 3 */}
+
+      <div className="video-section">
+        <video
+          ref={(el) => (videoRefs.current[2] = el)}
+          src={vedio3}
+          controls
+          onPlay={() => handlePlay(2)}
+          width="100%" // You can adjust the width and height
         >
           Your browser does not support the video tag.
         </video>
       </div>
+
+
     </div>
   );
 };
