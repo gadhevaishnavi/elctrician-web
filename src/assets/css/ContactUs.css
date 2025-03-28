@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background-color: #f1f1f1; /* Optional: Background color for the page */
+  background-color: #f1f1f1; 
   min-height: 100vh;
 }
 
@@ -19,7 +19,7 @@
 .contact-from,
 .contact-form2 {
   background-color: #f9f9f9;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   padding: 1.5rem;
   margin: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

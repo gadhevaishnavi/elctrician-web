@@ -26,7 +26,7 @@
  .mission-section {
   background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
@@ -35,48 +35,6 @@
   text-align: center;
   margin-bottom: 15px;
 } 
-
-/* Services Section */
- /* .services-section {
-  margin-bottom: 30px;
-}
-
-.services-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.services {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.service {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 20px;
-  width: 250px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.service img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-.service h3 {
-  margin: 10px 0;
-} */
 
 
 /* Team Section */
@@ -100,7 +58,7 @@
 .team-member {
   text-align: center;
   background: #fff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 200px;
@@ -117,28 +75,6 @@
   margin: 10px 0;
   font-size: 1.2rem;
 }
-
-
-
- 
-
- /* .selected-service {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.selected-service img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
-.selected-service h3 {
-  font-size: 24px;
-  color: #333;
-} */
-
 
 
 /* Services Section */
@@ -164,7 +100,7 @@
 .service {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   max-width: 300px;
   padding: 20px;
   text-align: center;
@@ -179,7 +115,7 @@
 .service img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   margin-bottom: 15px;
 }
 
@@ -200,7 +136,7 @@
   color: #fff;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s ease;
@@ -226,7 +162,7 @@
   width: 100%;
   max-width: 400px;
   height: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin: 20px 0;
 }
 
